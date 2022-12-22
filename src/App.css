@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+@media screen {
+    
+
+.home-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/017/663/252/original/anastasia-kozheko-normal.gif?1645074105);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container { 
+    display: flex;
+    width: 90%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+.cards {
+    width: 400px;
+    height: 300px;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0 ,0.272);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20pX) saturate(180PX);
+    border: 0.4px solid rgba(225, 225, 225, 0.272);
+    align-items: center;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+font-size: 2rem;
+font-weight: 900;
+color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    color:wheat;
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.cards input{
+margin-bottom: 10px;
+color: antiquewhite;
+background-color: transparent;
+border-color: transparent ;
+border-bottom-color: black ;
+height: 30px;
+width:199px;
+
 }
+.cards input::placeholder{
+color: rgb(183, 172, 172);
+font-size: large;
+}
+}
+
+
+
