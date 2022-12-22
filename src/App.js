@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from "react";
+import React,{useState} from "react";
 import Axios from "axios";
 
 import "./App.css"
@@ -45,7 +45,6 @@ return(
                   <h1>
                     <div>{weatherdata?.main.temp} <sup>&deg;C</sup></div>
                    </h1>
-                  <h1></h1>
                   <br /> <br />
                   <h2>{weatherdata?.weather[0].description}</h2>
                   </div>
